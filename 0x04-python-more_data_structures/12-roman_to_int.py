@@ -4,10 +4,12 @@ def to_subtract(list_num):
     maxlist = max(list_num)
 
     for i in list_num:
-        if max_list > i:
+        if maxlist > i:
             subtract += i
 
     return (maxlist - subtract)
+
+
 def roman_to_int(roman_string):
     if not roman_string:
         return 0
