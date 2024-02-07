@@ -3,9 +3,7 @@
 class Square:
     """class has private attributes."""
     def __init__(self, size=0):
-        """This method initiates square. 
-         Args:
-            size (int): This defines the size of the square and is  validated with try/except."""
+        """This method initiates square. """
         try:
             self.__size = size
             if size < 0:
