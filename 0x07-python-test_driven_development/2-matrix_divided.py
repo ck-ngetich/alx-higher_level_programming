@@ -1,5 +1,14 @@
 #!/usr/bin/python3
+"""
+matrix_divided divides the given matrix by the parameter and returns the divided one
+"""
 def matrix_divided(matrix, div):
+"""
+Checks if the entire list isint/float
+Checks if each list of the matrices have the same size
+checks if "div" is an int/float or is 0
+
+"""
     matrix_res= []
 
     if not isinstance(div, (int, float)):
