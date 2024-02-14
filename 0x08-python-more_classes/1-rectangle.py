@@ -1,33 +1,34 @@
 #!/usr/bin/python3
 """Module 2-rectangle
-Defining a Rectangle class
+Defines a Rectangle class.
 """
 
 
 class Rectangle:
-""" Rectangle class defined by its height and width"""
+    """Rectangle class defined by width and height."""
+
     def __init__(self, width=0, height=0):
-        """initializes Rectangle instance.
-Args:
-    width:is thhe width of rectangle
-    height:is the height of rectangle
+        """Initializes a Rectangle instance.
+
+        Args:
+            width: width of the rectangle
+            height: height of the rectangle
         """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """retrieves the instance of width"""
+        """Retrieves the width of a Rectangle instance."""
         return self.__width
 
     @width.setter
     def width(self, value):
-        """Sets the width of rectangle instances.
-
+        """Sets the width of a Rectangle instance
 
         Args:
-            value:checks if its a positive integer
-            """
+            value: value of the width, must be a positive integer
+        """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -36,14 +37,15 @@ Args:
 
     @property
     def height(self):
-        """Retrieves the height of rectangle instance"""
+        """Retrieves the height of a Rectangle instance."""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """Sets the height of rectangle instance
+        """Sets the height of a Rectangle instance
+
         Args:
-        value:is the value of height and must be +ve int
+            value: value of the height, must be a positive integer
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
@@ -51,11 +53,11 @@ Args:
             raise ValueError("height must be >= 0")
         self.__height = value
 
-        def area(self):
+    def area(self):
         """Calculates the area of a Rectangle instance
 
         Returns:
-            Area of the the rectangl is  height * width
+            Area of the the rectangle, given by height * width
         """
         return self.__width * self.__height
 
