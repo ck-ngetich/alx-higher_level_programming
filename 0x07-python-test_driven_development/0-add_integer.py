@@ -1,5 +1,10 @@
 #!/usr/bin/python3
+"""add_integer:
+    Checks if parameters are integer
+    Return parameter summation"""
 def add_integer(a, b=98):
+    """ 
+    Checks if integer,otherwise return its summation"""
 
     if type(a) is float:
         a = int(a)
