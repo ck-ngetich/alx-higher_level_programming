@@ -1,21 +1,12 @@
 #!/usr/bin/python3
-"""
-add_integer:
-    Checks if parameters are integer
-    Return parameter summation
-"""
+"""0-add_integer.py
+ Define the sum of two integers value. """
 def add_integer(a, b=98):
     """ 
-    Checks if integer,otherwise return its summation
+    Checks if integer,otherwise return its integer  summation
     """
-
-    if type(a) is float:
-        a = int(a)
-    if type(b) is float:
-        b = int(b)
-    if type(a) is not int:
+    if ((not isinstance(a, int) and not isinstance(a, float))):
         raise TypeError("a must be an integer")
-    if type(b) is not int:
+    if ((not isinstance(b, int) and not isinstance(b, float))):
         raise TypeError("b must be an integer")
-    else:
-        return a + b
+    return (int(a) + int(b))
