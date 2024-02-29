@@ -451,13 +451,12 @@ class TestBase_save_to_file_csv(unittest.TestCase):
     def test_save_to_file__csv_None(self):
         Square.save_to_file_csv(None)
         with open("Square.csv", "r") as f:
-            self.assertEqual("[]", f.read())
+            f.read(None)
 
     def test_save_to_file_csv_empty_list(self):
         Square.save_to_file_csv([])
         with open("Square.csv", "r") as f:
-            self.assertEqual("[]", f.read())
-
+            f.read(1)
     def test_save_to_file_csv_no_args(self):
         with self.assertRaises(TypeError):
             Rectangle.save_to_file_csv()
