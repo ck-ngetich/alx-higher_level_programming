@@ -98,7 +98,7 @@ class TestRectangle_instantiation(unittest.TestCase):
 
 
 class TestRectangle_width(unittest.TestCase):
-    """This is a unittests to tests initialization of width attributs of Rectangle."""
+    """This is a unittests to tests initialization of width attributs."""
 
     def test_None_width(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
@@ -174,7 +174,7 @@ class TestRectangle_width(unittest.TestCase):
 
 
 class TestRectangle_height(unittest.TestCase):
-    """This is a unittests to test initialization of height attributes of Rectangle."""
+    """This is a unittests to test initialization of height attributes."""
 
     def test_None_height(self):
         with self.assertRaisesRegex(TypeError, "height must be an integer"):
@@ -246,7 +246,7 @@ class TestRectangle_height(unittest.TestCase):
 
 
 class TestRectangle_x(unittest.TestCase):
-    """This is the unittests to test initialization of x attributes of Rectangle."""
+    """This is the unittests to test initialization of x attributes."""
 
     def test_None_x(self):
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
@@ -318,7 +318,7 @@ class TestRectangle_x(unittest.TestCase):
 
 
 class TestRectangle_y(unittest.TestCase):
-    """This is a unittests for testing initialization attributes of Rectangle."""
+    """This is a unittests for testing initialization attributes."""
 
     def test_None_y(self):
         with self.assertRaisesRegex(TypeError, "y must be an integer"):
@@ -386,7 +386,7 @@ class TestRectangle_y(unittest.TestCase):
 
 
 class TestRectangle_order_of_initialization(unittest.TestCase):
-    """This is the unittests to test the initialization attributes of the rectangle."""
+    """This is the unittests to test the initialization attributes of rect."""
 
     def test_width_before_height(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):

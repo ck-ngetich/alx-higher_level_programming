@@ -290,7 +290,7 @@ class TestSquare_y(unittest.TestCase):
 
 
 class TestSquare_order_of_initialization(unittest.TestCase):
-    """This is a unittests test initialization of  order of Square attribute."""
+    """This is a unittests test initialization of  order of attribute."""
 
     def test_size_before_x(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
@@ -639,6 +639,7 @@ class TestSquare_to_dictionary(unittest.TestCase):
         s = Square(10, 10, 10, 10)
         with self.assertRaises(TypeError):
             s.to_dictionary(1)
+
 
 if __name__ == "__main__":
     unittest.main()
