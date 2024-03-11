@@ -3,6 +3,7 @@
 Module containing the class BaseGeometry
 """
 
+
 class BaseGeometry:
     """Class with public instance"""
     def area(self):
