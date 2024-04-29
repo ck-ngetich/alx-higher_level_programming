@@ -10,7 +10,12 @@ Base = declarative_base()
 
 
 class State(Base):
-    """This is a class defining states table"""
+    """
+    This is a class defining states table
+    Attributes:
+    id(int)
+    name(string)
+    """
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, nullable=False,
                 autoincrement=True, unique=True)
